@@ -1,0 +1,43 @@
+<form [formGroup]="registrationform" (submit)="onSubmit()">
+    <div class="form-group">
+      <label for="Firstname">Name</label>
+      <input type="text"  
+            class="form-control"
+            name="Firstname"
+            formControlName="Firstname"
+            id="Firstname">
+        <div class="alert alert-danger" role="alert" *ngIf="firstname && firstname['touched'] && firstname['invalid'] ">
+            <h6>*name is required</h6>
+        </div>
+    </div>
+    <div class="form-group">
+        <label for="mobile">Mobile</label>
+        <input type="number" 
+            class="form-control"
+            name="mobile" 
+            formControlName="mobile"
+            id="mobile">
+      </div>
+      <div class="form-group">
+        <label for="email">Email address</label>
+        <input type="email"
+                class="form-control"
+                name="email"
+                formControlName="email"
+                id="email" >
+      </div>
+      <div class="form-group">
+        <label for="country">Country</label>
+        <input type="text"
+                class="form-control" 
+                name="country" 
+                formControlName="country"
+                id="country">
+      </div>
+      <br>
+      <div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+  </form>
+
+
