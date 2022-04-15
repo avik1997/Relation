@@ -9,6 +9,11 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AirlineComponent } from './airline/airline.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
+import { ProfileComponent } from './profile/profile.component';
+import { AddressComponent } from './address/address.component';
+import { AuthorizationComponent } from './authorization/authorization.component';
+import { HomeComponent } from './home/home.component';
+import { SquareRootsPipe } from './square-roots.pipe';
 
 @NgModule({
   declarations: [
@@ -16,7 +21,12 @@ import { ReactiveFormComponent } from './reactive-form/reactive-form.component';
     TableComponent,
     ImageComponent,
     AirlineComponent,
-    ReactiveFormComponent
+    ReactiveFormComponent,
+    ProfileComponent,
+    AddressComponent,
+    AuthorizationComponent,
+    HomeComponent,
+    SquareRootsPipe
   ],
   imports: [
     BrowserModule,
